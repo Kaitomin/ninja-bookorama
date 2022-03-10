@@ -11,6 +11,7 @@ addForm.addEventListener('submit', (e) => {
 
   let inputValue = addForm.querySelector('input[type=text]').value;
 
+  // If input empty, leave
   if (!inputValue) return;
 
   const li = document.createElement('li');
