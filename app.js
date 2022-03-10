@@ -9,10 +9,16 @@ const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const inputValue = addForm.querySelector('input').value;
+  let inputValue = addForm.querySelector('input[type=text]').value;
+
+  if (!inputValue) return;
+
   const li = document.createElement('li');
   const nameSpan = document.createElement('span');
   const deleteSpan = document.createElement('span');
+  
+  console.log(addForm)
+  console.log(inputValue)
 
   // Add value
   nameSpan.textContent = inputValue;
@@ -22,12 +28,13 @@ addForm.addEventListener('submit', (e) => {
   nameSpan.classList.add('name');
   deleteSpan.classList.add('delete');
 
+  // Append to DOM
   li.append(nameSpan, deleteSpan);
   ul.appendChild(li);
 
   // Reset value after submit
-  addForm.querySelector('input').value = '';
-
+  inputValue = 'HEy';
+  
 });
 
 // Delete book
