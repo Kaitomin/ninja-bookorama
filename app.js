@@ -33,7 +33,7 @@ addForm.addEventListener('submit', (e) => {
   ul.appendChild(li);
 
   // Reset value after submit
-  inputValue = 'HEy';
+  addForm.querySelector('input[type=text]').value = '';
   
 });
 
