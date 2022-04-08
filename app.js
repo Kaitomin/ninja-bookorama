@@ -17,8 +17,8 @@ addForm.addEventListener('submit', (e) => {
   const nameSpan = document.createElement('span');
   const deleteSpan = document.createElement('span');
   
-  console.log(addForm)
-  console.log(inputValue)
+  // console.log(addForm)
+  // console.log(inputValue)
 
   // Add value
   nameSpan.textContent = inputValue;
