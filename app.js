@@ -3,7 +3,6 @@
 const ul = document.querySelector('#book-list ul');
 const addForm = document.forms['add-book'];
 
-
 // Add book
 addForm.addEventListener('submit', (e) => {
   e.preventDefault();
