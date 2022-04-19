@@ -20,6 +20,7 @@ addForm.addEventListener('submit', (e) => {
   nameSpan.textContent = inputValue;
 
   // Add class
+  nameSpan.classList.add('name')
   deleteSpan.classList.add('fa-solid', 'fa-delete-left', 'delete');
 
   // Append to DOM
