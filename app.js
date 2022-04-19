@@ -14,18 +14,13 @@ addForm.addEventListener('submit', (e) => {
 
   const li = document.createElement('li');
   const nameSpan = document.createElement('span');
-  const deleteSpan = document.createElement('span');
+  const deleteSpan = document.createElement('i');
   
-  // console.log(addForm)
-  // console.log(inputValue)
-
   // Add value
   nameSpan.textContent = inputValue;
-  deleteSpan.textContent = "delete";
 
   // Add class
-  nameSpan.classList.add('name');
-  deleteSpan.classList.add('delete');
+  deleteSpan.classList.add('fa-solid', 'fa-delete-left', 'delete');
 
   // Append to DOM
   li.append(nameSpan, deleteSpan);
@@ -40,7 +35,7 @@ addForm.addEventListener('submit', (e) => {
 ul.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    if (e.target.className == 'delete') {
+    if (e.target.classList.contains('delete')) {
         const li = e.target.parentElement;
         li.remove();
     }

@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>JavaScript DOM Tutorials</title>
   </head>
   <body>
@@ -10,37 +13,39 @@
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Bookorama</h1>
-          <p>Books for Ninjas</p>
+          <p>Javascript DOM books</p>
           <form id="search-books">
             <input type="text" placeholder="Search books..." />
           </form>
 	    	</div>
 	    </header>
 	    <div id="book-list">
-	    	<h2 class="title">Books to Read</h2>
+	    	<h2 class="title">Books available</h2>
 	    	<ul>
 	    		<li>
 	    			<span class="name">Name of the Wind</span>
-	    			<span class="delete">delete</span>
+	    			<i class="fa-solid fa-delete-left delete"></i>
 	    		</li>
 	    		<li>
 	    			<span class="name">The Wise Man's Fear</span>
-	    			<span class="delete">delete</span>
+	    			<i class="fa-solid fa-delete-left delete"></i>
 	    		</li>
 	    		<li>
 	    			<span class="name">Kafka on the Shore</span>
-	    			<span class="delete">delete</span>
+	    			<i class="fa-solid fa-delete-left delete"></i>
 	    		</li>
 	    		<li>
 	    			<span class="name">The Master and the Margarita</span>
-	    			<span class="delete">delete</span>
+	    			<i class="fa-solid fa-delete-left delete"></i>
 	    		</li>
 	    	</ul>
 	    </div>
 	    <form id="add-book">
-				<input type="checkbox" id="hide"/>
-				<label for="hide">Hide all books</label>
-	    	<input type="text" placeholder="Add a book..." />
+				<div>
+					<input type="checkbox" id="hide"/>
+					<label for="hide">Hide all books</label>
+				</div>
+	    	<input type="text" placeholder="Add book..." />
 	    	<button>Add</button>
 	    </form>
 			<div id="tabbed-content">
